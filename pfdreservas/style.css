@@ -1,0 +1,100 @@
+/* Estilos para el nuevo diseño */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #b8b8b8;
+    color: #fff;
+}
+
+.header {
+    background-color: #1f5c85;
+    text-align: center;
+    padding: 8px;
+}
+
+.header-title {
+    font-size: 30px;
+    
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #62d19d;
+    border: 1px solid #c2c2c2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+                0 0 35px rgba(18, 161, 243, 0.5); /* Agregamos un segundo box-shadow */
+}
+
+.section-title {
+    font-size: 20px;
+    color: #0e3f22;
+}
+
+.sala-info {
+    margin-top: 20px;
+    color: #011b91;
+}
+
+.sala-list {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.sala-list li {
+    margin: 10px 0;
+}
+
+.form {
+    margin-top: 20px;
+    color: #001ba3;
+}
+
+.form-label {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0f1186;
+}
+
+.form-input, .form-select {
+    width: 100% !important;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #212c6d;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    background-color: #2980B9;
+}
+
+.footer {
+    text-align: center;
+    background-color: #2C3E50; 
+    color: #ffffff;
+    padding: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.form-items-container{
+    width: 97%;
+}
+

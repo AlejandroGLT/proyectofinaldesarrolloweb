@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Salas de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">SALONES PARA EVENTOS AG</h1>
+    </header>
+
+    <main class="main">
+        <section class="sala-info">
+            <h2 class="section-title">Salas Disponibles</h2>
+            <ul class="sala-list">
+                <li>Sala Principal - Capacidad: 200</li>
+                <li>Sala Este - Capacidad: 175</li>
+                <li>Sala Norte - Capacidad: 150</li>
+                <li>Sala Sur - Capacidad: 100</li>
+                <li>Sala Oeste - Capacidad: 50</li>
+            </ul>
+        </section>
+
+        <section class="reserva-form">
+            <h2 class="section-title">Reservar Sala</h2>
+            <form action="resv.php" method="POST" class="form">
+                <div class="form-items-container">   
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="form-input">
+
+                <label for="fecha" class="form-label">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required class="form-input">
+
+                <label for="hora_inicio" class="form-label">Hora de inicio:</label>
+                <input type="time" id="hora_inicio" name="hora_inicio" required class="form-input">
+
+                <label for="hora_finalizacion" class="form-label">Hora de finalización:</label>
+                <input type="time" id="hora_finalizacion" name="hora_finalizacion" required class="form-input">
+                </div>
+                <label for="sala" class="form-label">Sala:</label>
+                <select id="sala" name="sala" required class="form-input">
+                    <option value="1">Sala Principal</option>
+                    <option value="2">Sala Este</option>
+                    <option value="3">Sala Norte</option>
+                    <option value="4">Sala Sur</option>
+                    <option value="5">Sala Oeste</option>
+                </select>
+
+                <button type="submit" class="form-button">Reservar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; <?php echo date("Y"); ?> Salones para enveto AG</p>
+    </footer>
+</body>
+</html>
